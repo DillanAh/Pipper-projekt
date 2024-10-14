@@ -1,0 +1,190 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.logo{
+    width: 40px;
+    margin-bottom: 12px;
+}
+
+.logo:hover{
+    cursor: default;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+}
+
+
+.pip-entry {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px; 
+}
+
+
+.menu {
+    border: 1px solid black; 
+    border-radius: 1.5rem;
+    padding: 12px;
+    background-color: rgb(242, 240, 239);
+    
+}
+
+.menu ul {
+    list-style: none;
+    padding: 12px 0px;
+    margin: 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    display: block;
+}
+
+.menu ul li i {
+    padding-right: 8px;
+}
+
+.menu ul li a:hover {
+    background-color: #808080;
+    color: white;
+}
+
+
+.feed-section {
+    width: 80%;
+    background-color: #ecece8;
+    padding: 20px;
+}
+
+.feed-header {
+    background-color: #808080;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    border-radius: 2rem;
+}
+
+.pip-feed {
+    margin-top: 20px;
+    padding: 12px;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+
+template {
+    display: flex;
+}
+
+.pip {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    background-color: #ffffe0;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.user-avatar img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.pip-content {
+    width: 100%;
+}
+
+.pip-content strong {
+    font-size: 16px;
+}
+
+.pip-content p {
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.create-pip-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.create-pip-btn:hover {
+    background-color: #3e8e41;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 15% auto;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+#username, #pip-text {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#char-count {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+#submit-pip {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
